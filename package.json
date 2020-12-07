@@ -1,0 +1,26 @@
+{
+  "name": "felece-week-2",
+  "version": "1.0.0",
+  "description": "felece homework week 2\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bedirhangokce/Felece-week-2"
+  },
+  "author": "Bedirhan Gokce",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.3.0",
+    "grunt-autoprefixer": "3.0.4",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-clean": "2.0.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-less": "2.0.0",
+    "grunt-contrib-watch": "1.1.0",
+    "grunt-processhtml": "0.4.2"
+  }
+}
