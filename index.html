@@ -1,24 +1,93 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Stylesheets-->
+    <link href="styles/style.css" rel="stylesheet/less" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <!--Scripts-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
     <title>Felece-Week-2</title>
 </head>
+
 <body>
-    <header>
-        <div >
+    <!--Top line-->
+    <header class="top-header">
+        <div>
             <a href="#">Üye Ol&nbsp;</a>
             |
             <a href="#">&nbsp;Giriş Yap</a>
         </div>
-            <a href="#">SİPARİŞ TAKİP</a>
+        <a href="#"><i class="fas fa-truck icon"></i>&nbsp;SİPARİŞ TAKİP</a>
     </header>
+    <!--General Div-->
+    <div class="general">
+        <!--Main header-->
+        <header class="main-header">
+            <!--Menu-->
+            <div class="menu-list">
+                <ul>
+                    <li>Menu</li>
+                    <li>Erkek</li>
+                    <li>Kadın</li>
+                    <li>Çocuk</li>
+                    <li>Unisex</li>
+                </ul>
+            </div>
+            <div class="main-header-top">
+                <!--Icon-->
+                <div>
+                    <img src="resources\images\icons\felece-icon.png" alt="Icon cannot load">
+                </div>
+                <!--Search-Box-->
+                <div class="input-group md-form form-sm form-2 pl-0">
+                    <input class="form-control search-box-class" type="text"
+                        placeholder="Aradığınız tüm ürünler bir tık uzağınızda" aria-label="Search">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <!--Profile-Fav-Basket-->
+                <div class="icons">
+                    <div class="user-icon">
+                        <a class="icon" href="#"><i class="far fa-user"></i>
+                            <p>Giriş Yap</p>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a class="icon" href="#"><i class="far fa-heart"></i>
+                            <p>Favori Listem</p>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a class="icon" href="#"><i class="fas fa-shopping-basket"></i>
+                            <p>Sepetim</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </div>
+    <script src="resources/js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/less"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

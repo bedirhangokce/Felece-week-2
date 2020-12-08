@@ -1,23 +1,96 @@
 body {
   margin: 0px;
   padding: 0px;
+  align-self: center;
 }
-header {
+.general {
+  max-width: 1100px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0vw 11vw;
+  padding: 0vw 8vw;
   background-color: #f0f0f0;
   height: 40px;
   color: #3c7cc4;
 }
-header a {
+.top-header a {
   text-decoration: none;
   font: 0.95em Helvetica;
 }
-header a:visited {
+.top-header a:visited {
   color: #3c7cc4;
 }
-header a:hover {
+.top-header a:hover {
   text-decoration: underline;
+}
+.top-header div {
+  visibility: hidden;
+}
+.main-header {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main-header .menu-list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+.main-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header-top img {
+  height: 70px;
+}
+.main-header-top .search-box-class {
+  border: 1px solid #3c7cc4;
+}
+.main-header-top .input-group-text:hover {
+  color: white;
+  background-color: darkslategray;
+}
+.main-header-top div {
+  padding: 0 5px;
+}
+.main-header-top .icons {
+  display: flex;
+}
+.main-header-top .icons div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+.main-header-top .icons p {
+  font-size: 10px;
+}
+.main-header-top .icon {
+  color: black;
+  margin: 15px 15px 0px 15px;
+  font-size: 23px;
+}
+@media screen and (max-width: 1000) {
+  .general {
+    max-width: 600;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .user-icon {
+    position: absolute;
+    visibility: hidden;
+  }
+  .top-header div {
+    visibility: visible;
+  }
 }

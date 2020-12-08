@@ -1,15 +1,14 @@
 module.exports = function(grunt)
 {
-
     grunt.initConfig({
         concat: {
             js: {
                 src:['scripts/main.js'],
-                dest:'build/scripts.js'
+                dest:'build/scripts/main.js'
             },
             css: {
                 src:['styles/style.css'],
-                dest:'build/styles.css'
+                dest:'build/css/style.css'
             }
         }, 
         less: {
