@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/images/icons/felece-icon.png">
+    <!--Icon-->
     <!--Stylesheets-->
     <link href="styles/style.css" rel="stylesheet/less" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,8 +17,8 @@
 
 <body>
     <!--Top line-->
-    <header class="top-header">
-        <div>
+    <header class="top-header text-color">
+        <div class="login">
             <a href="#">Üye Ol&nbsp;</a>
             |
             <a href="#">&nbsp;Giriş Yap</a>
@@ -26,21 +28,22 @@
     <!--General Div-->
     <div class="general">
         <!--Main header-->
-        <header class="main-header">
+        <header class="main-header text-color">
             <!--Menu-->
             <div class="menu-list">
                 <ul>
-                    <li>Menu</li>
-                    <li>Erkek</li>
-                    <li>Kadın</li>
-                    <li>Çocuk</li>
-                    <li>Unisex</li>
+                    <li><a class="text-color" href="#">Menu</a></li>
+                    <li><a class="text-color" href="#">Erkek</a></li>
+                    <li><a class="text-color" href="#">Kadın</a></li>
+                    <li><a class="text-color" href="#">Çocuk</a></li>
+                    <li><a class="text-color" href="#">Unisex</a></li>
+                    <li><a class="sale" href="#">İndirim</a></li>
                 </ul>
             </div>
             <div class="main-header-top">
                 <!--Icon-->
                 <div>
-                    <img src="resources\images\icons\felece-icon.png" alt="Icon cannot load">
+                    <img src="resources/images/icons/felece-icon.png" alt="Icon cannot load">
                 </div>
                 <!--Search-Box-->
                 <div class="input-group md-form form-sm form-2 pl-0">
@@ -61,19 +64,36 @@
                     <div>
                         <a class="icon" href="#"><i class="far fa-heart"></i>
                             <p>Favori Listem</p>
+                            <span class="basket-counter">
+                                0
+                            </span>
                         </a>
-
+                        
                     </div>
                     <div>
                         <a class="icon" href="#"><i class="fas fa-shopping-basket"></i>
                             <p>Sepetim</p>
+                            <span class="fav-counter">
+                                0
+                            </span>
                         </a>
-
+                        
                     </div>
                 </div>
             </div>
 
         </header>
+        <!--Banners-->
+        <div class="banners">
+            <div class="first-banner">
+                <img src="resources/images/USTBANNER_WEB@2x.jpg">
+            </div>
+            <div class="second-banners">
+                <img src="resources/images/5.jpg">
+                <img src="resources/images/7.jpg">
+            </div>
+            
+        </div>
     </div>
     <script src="resources/js/script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/less"></script>
@@ -84,9 +104,6 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 </body>
 

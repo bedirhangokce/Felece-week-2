@@ -4,6 +4,9 @@ body{
     align-self: center;
     
 }
+.text-color{
+    color: #00699b;
+}
 .general{
     max-width: 1100px;  
     width: 100%; 
@@ -17,34 +20,44 @@ body{
     padding: 0vw 8vw;
     background-color:rgb(240, 240, 240);
     height: 40px;
-    color: rgb(60, 124, 196);
     a{
         text-decoration: none;
         font:0.95em Helvetica ;
     }
     a:visited {
-        color: rgb(60, 124, 196);
+        color: #00699b;
     }
     a:hover{
         text-decoration: underline;
     }
-    div{
+    div.login{
         visibility: hidden;
     }
 }
 .main-header{
     display: flex;
     flex-direction: column-reverse;
-    .menu-list ul{
-        list-style-type: none;
+    .menu-list{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-around;
-    }
+        div{
+            display: flex;
+        }
+        
+        ul{
+            list-style-type: none;
+            display: flex;
+            padding-left: 0px;
+            li{
+                padding: 0px 20px; 
+               
+            }
+            .sale{
+                color: red;
+            }
+        }
+    } 
 }
-.main-header-top{
-    
+.main-header-top{  
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -62,6 +75,7 @@ body{
     div{
         padding: 0 5px;
     }
+
     .icons{
         display: flex;
         
@@ -74,28 +88,79 @@ body{
         }
         p{
             font-size: 10px;
+            margin-bottom: 0px !important; 
+        }
+        span{
+            font-size: .6rem;
+            position: absolute;
+            
+            top: 1.5cm;
+            width: 15px;
+            height: 15px;
+            color: #fff;
+            background-color: #418deb;
+            border-radius: 50%;
+            
         } 
     }
     .icon{ 
         color: black;
-        margin: 15px 15px 0px 15px;
+        margin: 10px 10px 0px 10px;
         font-size: 23px;
     }  
 }
-@media screen and (max-width: 1000){
+.banners {
+    .first-banner{
+        img{
+            width: 1100px; 
+        }
+    }
+    .second-banners{
+        display: flex;
+        flex-direction: row ;
+        img{
+            width: 550px;
+        }
+    }
+}
+    
+@media screen and (max-width: 1100px){
     .general{
-        max-width: 600;
+        max-width: 850px;  
         width: 100%; 
         margin-right: auto;
         margin-left: auto;
     }
+    .banners .first-banner img {
+        width: 850px;
+    }
+      
+    .banners .second-banners img {
+        width: 425px;
+    }
+}
+@media screen and (max-width: 850px){
+    .general{
+        max-width: 600px;  
+        width: 100%; 
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .banners .first-banner img {
+        width: 600px;
+    }
+      
+    .banners .second-banners img {
+        width: 300px;
+    }
 }
 @media screen and (max-width: 600px){
+    
     .user-icon{
         position: absolute;
         visibility: hidden;
     }
-    .top-header div{
+    .top-header div.login{
         visibility: visible;
     }
 }

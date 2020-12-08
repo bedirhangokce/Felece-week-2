@@ -44,41 +44,41 @@ module.exports = function(grunt)
                   server: './',
               }
           }
-      },
-      clean: {
-        folder: ['build','dest']
-    },
-    processhtml: {
-      build: {
-          files: {
+        },
+        clean: {
+          folder: ['build','dest']
+        },
+        processhtml: {
+          build: {
+           files: {
               'index.html' : ['index.html']
-          }
-      }
-  },
-  copy: {
-    main: {
-      files: [
-        {expand: true, src: ['resources'], dest: 'dest/'},
-      ],
-    },
-},
-autoprefixer: {
-    options: {
-        browsers: ['last 2 versions', 'chrome']
-    },
-  }
+           }
+         }
+        },
+        copy: {
+          main: {
+           files: [
+            {expand: true, src: ['resources'], dest: 'dest/'},
+           ],
+          },
+        },
+        autoprefixer: {
+          options: {
+            browsers: ['last 2 versions', 'chrome']
+          },
+        }
     });
-
-   
-    //NPMTASK
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-processhtml');
-    grunt.loadNpmTasks('grunt-browser-sync');
+    
+    
 
     grunt.registerTask('default', ['browserSync', 'watch']);
 }
