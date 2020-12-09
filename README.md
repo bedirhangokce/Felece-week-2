@@ -6,6 +6,4 @@ Felece Runner Club week 2 homework
 
 -Less, Bootstrap
 
--Jquery
-
 -Font Awesome

@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="resources/images/icons/felece-icon.png">
     <!--Icon-->
+    <link rel="shortcut icon" href="resources/images/icons/felece-icon.png">
+
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!--Stylesheets-->
-    <link href="styles/style.css" rel="stylesheet/less" type="text/css">
+    <link href="assets/styles/style.css" rel="stylesheet/less" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -32,12 +34,15 @@
             <!--Menu-->
             <div class="menu-list">
                 <ul>
-                    <li><a class="text-color" href="#">Menu</a></li>
-                    <li><a class="text-color" href="#">Erkek</a></li>
-                    <li><a class="text-color" href="#">Kadın</a></li>
-                    <li><a class="text-color" href="#">Çocuk</a></li>
-                    <li><a class="text-color" href="#">Unisex</a></li>
-                    <li><a class="sale" href="#">İndirim</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Erkek</a></li>
+                    <li><a href="#">Kadın</a></li>
+                    <li><a href="#">Çocuk</a></li>
+                    <li><a href="#">Unisex</a></li>
+                    <div>
+                        <li><a class="sale" href="#">İndirim</a></li>
+                    </div>
+                    
                 </ul>
             </div>
             <div class="main-header-top">
@@ -68,7 +73,7 @@
                                 0
                             </span>
                         </a>
-                        
+
                     </div>
                     <div>
                         <a class="icon" href="#"><i class="fas fa-shopping-basket"></i>
@@ -77,10 +82,11 @@
                                 0
                             </span>
                         </a>
-                        
+
                     </div>
                 </div>
             </div>
+
 
         </header>
         <!--Banners-->
@@ -92,19 +98,27 @@
                 <img src="resources/images/5.jpg">
                 <img src="resources/images/7.jpg">
             </div>
-            
+            <!--Slide Banners-->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <img class="slides" src="resources/images/1.jpg">
+                <img class="slides" src="resources/images/2.jpg">
+                <img class="slides" src="resources/images/3.jpg">
+                <img class="slides" src="resources/images/4.jpg">
+            </div>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
         </div>
     </div>
-    <script src="resources/js/script.js"></script>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
     <script src="//cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </body>
 
 </html>

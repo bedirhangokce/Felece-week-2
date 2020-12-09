@@ -49,10 +49,13 @@ body {
   padding-left: 0px;
 }
 .main-header .menu-list ul li {
-  padding: 0px 20px;
+  padding: 0px 2vw;
 }
 .main-header .menu-list ul .sale {
-  color: red;
+  color: white;
+  background-color: red;
+  padding: 4px 7px;
+  border-radius: 15%;
 }
 .main-header-top {
   display: flex;
@@ -100,15 +103,29 @@ body {
   margin: 10px 10px 0px 10px;
   font-size: 23px;
 }
+.banners {
+  /*.slideshow-container{
+        :nth-child(odd){
+            visibility: hidden;
+            position: absolute;
+        }
+    }*/
+}
+.banners img {
+  margin: 5px;
+}
 .banners .first-banner img {
   width: 1100px;
 }
 .banners .second-banners {
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
 }
 .banners .second-banners img {
-  width: 550px;
+  width: 545px;
+}
+.banners .slides {
+  width: 1100px;
 }
 @media screen and (max-width: 1100px) {
   .general {
@@ -121,7 +138,10 @@ body {
     width: 850px;
   }
   .banners .second-banners img {
-    width: 425px;
+    width: 420px;
+  }
+  .banners .slides {
+    width: 850px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -135,10 +155,18 @@ body {
     width: 600px;
   }
   .banners .second-banners img {
-    width: 300px;
+    width: 295px;
+  }
+  .banners .slides {
+    width: 600px;
   }
 }
 @media screen and (max-width: 600px) {
+  .general {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .user-icon {
     position: absolute;
     visibility: hidden;
@@ -146,4 +174,31 @@ body {
   .top-header div.login {
     visibility: visible;
   }
+  .banners .first-banner img {
+    width: 100%;
+  }
+  .banners .second-banners {
+    flex-direction: column;
+  }
+  .banners .second-banners img {
+    width: 100%;
+  }
+  .banners .slides {
+    width: 100%;
+  }
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
 }
