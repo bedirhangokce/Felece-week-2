@@ -1,3 +1,9 @@
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -37,8 +43,30 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
+.main-header li,
+.main-header a {
+  color: #00699b;
+  transition: color 650ms;
+}
+.main-header li :hover,
+.main-header a :hover {
+  color: black;
+  cursor: pointer;
+}
 .main-header .menu-list {
   display: flex;
+  position: relative;
+}
+.main-header .menu-list .nav-list li {
+  line-height: 5rem;
+}
+.main-header .menu-list .menu-icons {
+  font-size: 3rem;
+  visibility: hidden;
+  position: absolute;
+  cursor: pointer;
+  top: 5%;
+  left: 2rem;
 }
 .main-header .menu-list div {
   display: flex;
@@ -56,6 +84,35 @@ body {
   background-color: red;
   padding: 4px 7px;
   border-radius: 15%;
+}
+.main-header .menu-list li:hover > .sub-menu {
+  visibility: visible;
+}
+.main-header .menu-list .sub-menu {
+  flex-wrap: wrap;
+  top: 60px;
+  border-left: 3px solid #00699b;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  visibility: hidden;
+  position: absolute;
+}
+.main-header .menu-list .sub-menu ::before {
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  left: 3rem;
+  border: 1.2rem solid transparent;
+}
+.main-header .menu-list .sub-menu li {
+  line-height: 4rem;
+}
+.main-header .menu-list .sub-menu .sub-menu {
+  flex-wrap: nowrap;
+  border-top: none;
+  border-left: 3px solid #00699b;
+  left: 100%;
 }
 .main-header-top {
   display: flex;
@@ -103,14 +160,6 @@ body {
   margin: 10px 10px 0px 10px;
   font-size: 23px;
 }
-.banners {
-  /*.slideshow-container{
-        :nth-child(odd){
-            visibility: hidden;
-            position: absolute;
-        }
-    }*/
-}
 .banners img {
   margin: 5px;
 }
@@ -126,6 +175,20 @@ body {
 }
 .banners .slides {
   width: 1100px;
+}
+.banners .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.banners .active,
+.banners .dot:hover {
+  background-color: #717171;
 }
 @media screen and (max-width: 1100px) {
   .general {
@@ -187,18 +250,8 @@ body {
     width: 100%;
   }
 }
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.dot:hover {
-  background-color: #717171;
+@media screen and (max-width: 520px) {
+  .search-box {
+    background-color: red;
+  }
 }

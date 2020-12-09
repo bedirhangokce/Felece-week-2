@@ -14,7 +14,7 @@ else {
 show(slideIndex);
 
 function currentSlide(n) {
-  if (width > 530) {
+  if (width > 600) {
     show(n);
   } else {
     show(n + 1);
