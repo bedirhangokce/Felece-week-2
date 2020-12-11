@@ -1,18 +1,7 @@
 var width = window.innerWidth;
 var slides = document.getElementsByClassName("slides");
 var dots = document.getElementsByClassName("dot");
-var slideIndex = 1;
-
-if (width > 600) {
-  slideIndex = 0;
-  show(slideIndex);
-}
-else {
-  slideIndex = 1;
-  show(slideIndex);
-}
-show(slideIndex);
-
+var slideIndex = 0;
 function currentSlide(n) {
   if (width > 600) {
     show(n);
@@ -33,3 +22,20 @@ function show(n) {
 }
 window.onload = resizer;
 window.onresize = resizer;
+
+$(document).ready(function () {
+
+    $(".menu-btn a").click(function () {
+        $(".overlay").fadeToggle(300);
+    });
+    
+    $('.menu .service-lvl a').on('click', function () {
+        $(this).parent().parent().toggleClass('move');
+    });
+  
+    $('.menu .service-lvl .return a').on('click', function () {
+        $(this).parent().parent().parent().parent().removeClass('move');
+    });
+
+});
+
