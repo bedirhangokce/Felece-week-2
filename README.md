@@ -8,6 +8,8 @@ On https://bedirhangokce.github.io/Felece-week-2/
 
 -Less, Bootstrap
 
+-Jquery
+
 -Font Awesome
 
 

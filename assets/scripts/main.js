@@ -23,10 +23,14 @@ function show(n) {
 window.onload = resizer;
 window.onresize = resizer;
 
+function changeIcon(x) {
+  x.classList.toggle("fa-times");
+}
+
 $(document).ready(function () {
 
     $(".menu-btn a").click(function () {
-        $(".overlay").fadeToggle(300);
+        $(".overlay").fadeToggle(300);             
     });
     
     $('.menu .service-lvl a').on('click', function () {
@@ -36,6 +40,16 @@ $(document).ready(function () {
     $('.menu .service-lvl .return a').on('click', function () {
         $(this).parent().parent().parent().parent().removeClass('move');
     });
-
 });
+
+function txtFocus() 
+{ 
+  $('.last-searches').show();
+}
+
+function txtFocusoff()
+{
+	$('.last-searches').hide();
+}
+
 
