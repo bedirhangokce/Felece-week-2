@@ -12,16 +12,14 @@
     <link href="assets/styles/style.css" rel="stylesheet/less" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-            
-    <!--Scripts-->        
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/styles/bootstrap.css">
+    <!--Scripts-->
+    <script src="assets/scripts/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/scripts/main.js"></script>
     <script src="//cdn.jsdelivr.net/npm/less"></script>
-    
+
     <title>Felece-Week-2</title>
 </head>
 
@@ -36,12 +34,12 @@
                                 <i class="fa fa-arrow-right"></i>
                             </li>
                             <li class="service-lvl"><a href="#">Kadın</a>
-                                <i class="fa fa-arrow-right"></i>     
+                                <i class="fa fa-arrow-right"></i>
                             </li>
                             <li class="service-lvl"><a href="#">Çocuk</a>
                                 <i class="fa fa-arrow-right"></i>
                                 <ul class="sub">
-                                    
+
                                     <li><a href="#">Pantolon</a></li>
                                     <li><a href="#">Sweatshirt</a></li>
                                     <li><a href="#">Tshirt</a></li>
@@ -76,100 +74,98 @@
             <header class="main-header text-color">
                 <!--Menu-->
                 <div class="menu-list">
-                    <ul id="nav-list">
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Erkek<i class="fas fa-caret-down"></i></a>
-                            <ul class="sub-menu">
-                                <li>Pantolon
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub-menu">
-                                        <li>Kot</li>
-                                        <li>Kumaş</li>
-                                        <li>Keten</li>
-                                    </ul>
-                                </li>
-                                <li>Tshirt
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub-menu">
-                                        <li>Kısa kol</li>
-                                        <li>Uzun kol</li>
-                                        <li>Sıfır kol</li>
-                                    </ul>
-                                </li>
-                                <li>Sweatshirt
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub-menu">
-                                        <li>Kapüşonlu</li>
-                                        <li>Baskılı</li>
-                                    </ul>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main_nav">
 
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Kadın
-                                <i class="fas fa-caret-down"></i>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>Pantolon
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub-menu">
-                                        <li>Kot</li>
-                                        <li>Kumaş</li>
-                                        <li>Keten</li>
+                            <ul class="navbar-nav">                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Erkek
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"> Pantolon &raquo </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Kot</a></li>
+                                                <li><a class="dropdown-item" href=""> Keten</a></li>
+                                                <li><a class="dropdown-item" href=""> Kumaş</a>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Tshirt  &raquo </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Kısa Kol</a></li>
+                                                <li><a class="dropdown-item" href=""> Uzun Kol</a></li>
+                                                <li><a class="dropdown-item" href=""> Sıfır Kol</a>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Sweatshirt &raquo </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Kapüşonlu</a></li>
+                                                <li><a class="dropdown-item" href=""> Kapüşonsuz</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li>Tshirt
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub-menu">
-                                        <li>Kısa kol</li>
-                                        <li>Uzun kol</li>
-                                        <li>Sıfır kol</li>
-                                    </ul>
-                                </li>
-                                <li>Sweatshirt
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub-menu">
-                                        <li>Kapüşonlu</li>
-                                        <li>Baskılı</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Çocuk
-                                <i class="fas fa-caret-down"></i>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>Pantolon
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub-menu">
-                                        <li>Kot</li>
-                                        <li>Kumaş</li>
-                                        <li>Keten</li>
-                                    </ul>
-                                </li>
-                                <li>Tshirt
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub-menu">
-                                        <li>Kısa kol</li>
-                                        <li>Uzun kol</li>
-                                        <li>Sıfır kol</li>
-                                    </ul>
-                                </li>
-                                <li>Sweatshirt
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub-menu">
-                                        <li>Kapüşonlu</li>
-                                        <li>Baskılı</li>
-                                    </ul>
 
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Kadın
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"> Pantolon &raquo </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Kot</a></li>
+                                                <li><a class="dropdown-item" href=""> Keten</a></li>
+                                                <li><a class="dropdown-item" href=""> Kumaş</a>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Tshirt  &raquo </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Kısa Kol</a></li>
+                                                <li><a class="dropdown-item" href=""> Uzun Kol</a></li>
+                                                <li><a class="dropdown-item" href=""> Sıfır Kol</a>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Sweatshirt &raquo </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Kapüşonlu</a></li>
+                                                <li><a class="dropdown-item" href=""> Kapüşonsuz</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Çocuk
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"> Pantolon &raquo </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Kot</a></li>
+                                                <li><a class="dropdown-item" href=""> Keten</a></li>
+                                                <li><a class="dropdown-item" href=""> Kumaş</a>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Tshirt  &raquo </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Kısa Kol</a></li>
+                                                <li><a class="dropdown-item" href=""> Uzun Kol</a></li>
+                                                <li><a class="dropdown-item" href=""> Sıfır Kol</a>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Sweatshirt &raquo </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Kapüşonlu</a></li>
+                                                <li><a class="dropdown-item" href=""> Kapüşonsuz</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <li><a href="#">Unisex</a></li>
-                        <div>
-                            <li><a class="sale" href="#">İndirim</a></li>
-                        </div>
-                    </ul>
+
+                        </div> <!-- navbar-collapse.// -->
+                    </nav>
                 </div>
                 <div class="main-header-top">
                     <!--Menu Icons-->
@@ -187,16 +183,16 @@
                     <!--Search-Box-->
                     <div class="input-group md-form form-sm form-2 pl-0 search-boxes">
                         <div class="search-box">
-                            <input class="form-control search-box-class" type="text"
-                                onfocus="txtFocus()" onFocusout="txtFocusoff()"
-                                placeholder="Aradığınız tüm ürünler bir tık uzağınızda" aria-label="Search">
+                            <input class="form-control search-box-class" type="text" onfocus="txtFocus()"
+                                onFocusout="txtFocusoff()" placeholder="Aradığınız tüm ürünler bir tık uzağınızda"
+                                aria-label="Search">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-search text-grey"
                                         aria-hidden="true"></i></span>
                             </div>
                         </div>
 
-                        
+
                         <div class="last-searches">
                             <div class="head">
                                 <h1>En Çok Arananlar</h1>

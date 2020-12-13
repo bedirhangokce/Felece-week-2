@@ -3,7 +3,7 @@ var slides = document.getElementsByClassName("slides");
 var dots = document.getElementsByClassName("dot");
 var slideIndex = 0;
 function currentSlide(n) {
-  if (width > 600) {
+  if (width > 750) {
     show(n);
   } else {
     show(n + 1);
@@ -51,5 +51,6 @@ function txtFocusoff()
 {
 	$('.last-searches').hide();
 }
+
 
 
