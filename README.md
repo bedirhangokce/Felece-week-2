@@ -1,7 +1,4 @@
-# Felece Week 2
-Felece Runner Club week 2 homework
-
-On https://bedirhangokce.github.io/Felece-week-2/
+On https://bedirhangokce.github.io/Shopping-Website-Interface/
 ## Used Technologies;
 
 -Grunt
@@ -11,6 +8,3 @@ On https://bedirhangokce.github.io/Felece-week-2/
 -Jquery
 
 -Font Awesome
-
-
-
